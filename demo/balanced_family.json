@@ -1,0 +1,231 @@
+{
+  "full_name": "Tariq Khan",
+  "family_name": "Khan",
+  "relation": "Grandfather (Patriarch)",
+  "generation": 1,
+  "partners": [
+    {
+      "full_name": "Farida Khan",
+      "family_name": "Khan",
+      "relation": "Grandmother (Matriarch)"
+    }
+  ],
+  "children": [
+    {
+      "full_name": "Rashid Khan",
+      "family_name": "Khan",
+      "relation": "Elder Son (Father of Left Branch)",
+      "generation": 2,
+      "partners": [
+        {
+          "full_name": "Amina Khan",
+          "family_name": "Khan",
+          "relation": "Daughter-in-law (Mother of Left Branch)"
+        }
+      ],
+      "children": [
+        {
+          "full_name": "Omar Khan",
+          "family_name": "Khan",
+          "relation": "Grandson (First Nephew)",
+          "generation": 3,
+          "partners": [
+            {
+              "full_name": "Layla Khan",
+              "family_name": "Khan",
+              "relation": "Granddaughter-in-law"
+            }
+          ],
+          "children": [
+            {
+              "full_name": "Ibrahim Khan",
+              "family_name": "Khan",
+              "relation": "Great-Grandson",
+              "generation": 4,
+              "partners": [],
+              "children": []
+            },
+            {
+              "full_name": "Maryam Khan",
+              "family_name": "Khan",
+              "relation": "Great-Granddaughter",
+              "generation": 4,
+              "partners": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "full_name": "Zayd Khan",
+          "family_name": "Khan",
+          "relation": "Grandson (Second Nephew)",
+          "generation": 3,
+          "partners": [
+            {
+              "full_name": "Noor Khan",
+              "family_name": "Khan",
+              "relation": "Granddaughter-in-law"
+            }
+          ],
+          "children": [
+            {
+              "full_name": "Saad Khan",
+              "family_name": "Khan",
+              "relation": "Great-Grandson",
+              "generation": 4,
+              "partners": [],
+              "children": []
+            },
+            {
+              "full_name": "Ayla Khan",
+              "family_name": "Khan",
+              "relation": "Great-Granddaughter",
+              "generation": 4,
+              "partners": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "full_name": "Farhan Khan",
+          "family_name": "Khan",
+          "relation": "Grandson (Third Nephew)",
+          "generation": 3,
+          "partners": [
+            {
+              "full_name": "Hiba Khan",
+              "family_name": "Khan",
+              "relation": "Granddaughter-in-law"
+            }
+          ],
+          "children": [
+            {
+              "full_name": "Kareem Khan",
+              "family_name": "Khan",
+              "relation": "Great-Grandson",
+              "generation": 4,
+              "partners": [],
+              "children": []
+            },
+            {
+              "full_name": "Zahra Khan",
+              "family_name": "Khan",
+              "relation": "Great-Granddaughter",
+              "generation": 4,
+              "partners": [],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "full_name": "Zubair Khan",
+      "family_name": "Khan",
+      "relation": "Younger Son (Father of Right Branch)",
+      "generation": 2,
+      "partners": [
+        {
+          "full_name": "Salma Khan",
+          "family_name": "Khan",
+          "relation": "Daughter-in-law (Mother of Right Branch)"
+        }
+      ],
+      "children": [
+        {
+          "full_name": "Bilal Khan",
+          "family_name": "Khan",
+          "relation": "Grandson (First Cousin)",
+          "generation": 3,
+          "partners": [
+            {
+              "full_name": "Hana Khan",
+              "family_name": "Khan",
+              "relation": "Granddaughter-in-law"
+            }
+          ],
+          "children": [
+            {
+              "full_name": "Rayyan Khan",
+              "family_name": "Khan",
+              "relation": "Great-Grandson",
+              "generation": 4,
+              "partners": [],
+              "children": []
+            },
+            {
+              "full_name": "Zoya Khan",
+              "family_name": "Khan",
+              "relation": "Great-Granddaughter",
+              "generation": 4,
+              "partners": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "full_name": "Hamza Khan",
+          "family_name": "Khan",
+          "relation": "Grandson (Second Cousin)",
+          "generation": 3,
+          "partners": [
+            {
+              "full_name": "Sara Khan",
+              "family_name": "Khan",
+              "relation": "Granddaughter-in-law"
+            }
+          ],
+          "children": [
+            {
+              "full_name": "Danish Khan",
+              "family_name": "Khan",
+              "relation": "Great-Grandson",
+              "generation": 4,
+              "partners": [],
+              "children": []
+            },
+            {
+              "full_name": "Inaya Khan",
+              "family_name": "Khan",
+              "relation": "Great-Granddaughter",
+              "generation": 4,
+              "partners": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "full_name": "Haris Khan",
+          "family_name": "Khan",
+          "relation": "Grandson (Third Cousin)",
+          "generation": 3,
+          "partners": [
+            {
+              "full_name": "Rania Khan",
+              "family_name": "Khan",
+              "relation": "Granddaughter-in-law"
+            }
+          ],
+          "children": [
+            {
+              "full_name": "Mustafa Khan",
+              "family_name": "Khan",
+              "relation": "Great-Grandson",
+              "generation": 4,
+              "partners": [],
+              "children": []
+            },
+            {
+              "full_name": "Anum Khan",
+              "family_name": "Khan",
+              "relation": "Great-Granddaughter",
+              "generation": 4,
+              "partners": [],
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
