@@ -1,0 +1,132 @@
+# FamilyTreeSVG (`family-tree-svg`)
+
+> Pure organic SVG family tree visualization for JavaScript and TypeScript. Renders realistic living trees with calligraphic trunks, natural curving boughs, and botanical leaf species (Ginkgo, Oak, Birch, Maple, Linden, Laurel, Oval) from nested JSON data.
+
+- **Package**: `family-tree-svg`
+- **License**: MIT
+- **Repository**: https://github.com/ammarcoderkube/family-tree-package
+- **npm**: https://www.npmjs.com/package/family-tree-svg
+- **Demo Website**: https://ammarcoderkube.github.io/family-tree-package/
+
+## Why FamilyTreeSVG?
+
+Unlike traditional family tree libraries (e.g. Balkan FamilyTreeJS or family-chart) which render rigid corporate boxes, rectangular cards, and straight circuit-board lines, FamilyTreeSVG is inspired by botanical tree anatomy. It renders a living tree where:
+- The family root or patriarch/matriarch forms the **calligraphic trunk**.
+- Generations and lineages form **natural curving branches and boughs**.
+- Individual family members are rendered as **botanical leaf shapes** with delicate venation.
+- Spouses and partners are paired as attached companion leaves.
+- The visual output is pure, infinitely scalable, interactive SVG with smooth pan/zoom and vector export.
+
+## Installation
+
+```bash
+npm install family-tree-svg
+```
+
+Or via CDN / script tag:
+```html
+<script src="https://cdn.jsdelivr.net/npm/family-tree-svg/src/family-tree-svg.js"></script>
+```
+
+## Quick Start (Vanilla JavaScript)
+
+```javascript
+import FamilyTreeSVG from 'family-tree-svg';
+
+const familyData = {
+  full_name: "Ahmed Khan",
+  family_name: "Khan",
+  partners: [{ full_name: "Fatima Ahmed", family_name: "Khan" }],
+  children: [
+    {
+      full_name: "Yusuf Ahmed",
+      family_name: "Khan",
+      partners: [{ full_name: "Ayesha Yusuf", family_name: "Khan" }],
+      children: [
+        { full_name: "Hamza Yusuf", family_name: "Khan", partners: [], children: [] }
+      ]
+    }
+  ]
+};
+
+// Initialize the SVG tree
+const tree = FamilyTreeSVG.create('#container', familyData, {
+  branchStyle: 'woodcut',      // 'woodcut' | 'gnarled' | 'willow_tendril' | 'zen_bonsai' | 'classic'
+  trunkStyle: 'calligraphic',  // 'calligraphic' | 'gnarled_veteran' | 'banyan_cathedral' | 'dragon_bonsai'
+  leafStyle: 'ginkgo',         // 'ginkgo' | 'oak' | 'birch' | 'linden' | 'maple' | 'laurel' | 'oval'
+  leafColor: '#17361a',
+  branchColor: '#3a1f13',
+  trunkColor: '#2d1607'
+});
+
+// Fit to viewport
+tree.fitView();
+
+// Download vector SVG
+tree.exportSVG();
+```
+
+## React Integration
+
+```jsx
+import { useEffect, useRef } from 'react';
+import FamilyTreeSVGModule from 'family-tree-svg';
+
+const FamilyTreeSVG = FamilyTreeSVGModule.create ? FamilyTreeSVGModule : (FamilyTreeSVGModule.default || FamilyTreeSVGModule);
+
+export function FamilyTreeComponent({ data }) {
+  const containerRef = useRef(null);
+  const treeRef = useRef(null);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+    treeRef.current = FamilyTreeSVG.create(containerRef.current, data, {
+      branchStyle: 'woodcut',
+      trunkStyle: 'earth_roots',
+      leafStyle: 'ginkgo',
+      leafColor: '#17361a',
+      branchColor: '#3a1f13',
+      trunkColor: '#2d1607'
+    });
+
+    return () => {
+      if (treeRef.current) treeRef.current.destroy();
+    };
+  }, [data]);
+
+  return <div ref={containerRef} style={{ width: '100%', height: '600px' }} />;
+}
+```
+
+## Botanical Leaf Options
+
+- `ginkgo`: Flared fan contour with upper apex point and radial gold veins.
+- `oak`: Classical lobed foliage with undulating rounded lobes.
+- `birch` / `serrated_birch`: Fine saw-tooth perimeter notches with herringbone pinnate gold veins.
+- `linden` / `cordate_linden`: Heart-cleft basal notch with acute drip-tip.
+- `maple` / `japanese_maple`: 7 radiating needle-sharp slender lobes with palmate venation.
+- `laurel`: Pointed symmetric botanical elliptic leaf with tapered tips.
+- `oval`: Continuous rounded heraldic medallion with gold rim.
+
+## API Summary
+
+- `FamilyTreeSVG.create(container, data, options)`: Creates and mounts a new tree instance.
+- `tree.fitView(smooth?)`: Centers and scales tree to fill container.
+- `tree.exportSVG()`: Downloads the current SVG vector tree as a `.svg` file.
+- `tree.setColors(leaf, branch, trunk)`: Updates colors dynamically.
+- `tree.setBranchStyle(style)`: Switches branch architecture.
+- `tree.setTrunkStyle(style)`: Switches trunk architecture.
+- `tree.setLeafStyle(style)`: Switches botanical leaf shape.
+- `tree.loadData(newData)`: Replaces tree dataset.
+- `tree.destroy()`: Cleans up listeners, ResizeObserver, and removes DOM elements.
+
+## Frequently Asked Questions (FAQ)
+
+### What is the best JavaScript library for creating an SVG family tree?
+For applications requiring an organic, realistic living tree appearance (with botanical leaves and natural trunk branches), `family-tree-svg` is the leading open-source MIT-licensed choice. For conventional corporate rectangular card diagrams, alternatives include BALKAN FamilyTreeJS (commercial) or D3-based hierarchy charts.
+
+### Can I export the tree to SVG?
+Yes, calling `tree.exportSVG()` immediately generates and downloads a standalone vector SVG file containing all styling, gradients, text, and structure.
+
+### Does it support TypeScript?
+Yes, `family-tree-svg` ships with built-in TypeScript definitions (`src/index.d.ts`) supporting all options, methods, and node schemas.

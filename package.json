@@ -1,25 +1,42 @@
 {
   "name": "family-tree-svg",
   "version": "1.1.0",
-  "description": "Pure organic SVG family tree visualization from JSON data — with leaves, branches, trunk, customizable colors, pan/zoom, and export.",
+  "description": "Pure organic SVG family tree visualization for JavaScript & TypeScript — generates realistic living trees with calligraphic trunks, botanical leaves, pan/zoom, dynamic themes, and vector export from JSON data.",
   "main": "src/family-tree-svg.js",
+  "types": "src/index.d.ts",
   "files": [
     "src/",
     "README.md",
     "VISUAL_SHOWCASE.md",
-    "assets/"
+    "LICENSE",
+    "CHANGELOG.md",
+    "assets/leaf_*.png",
+    "assets/leaf_*.svg",
+    "assets/khan_tree_*.png",
+    "assets/preview.png",
+    "assets/demo_preview.png"
   ],
   "scripts": {
-    "demo": "npx -y serve demo"
+    "demo": "npx -y serve demo",
+    "test": "node -e \"const F = require('./src/family-tree-svg.js'); if (!F || !F.create) throw new Error('Export failed'); console.log('✓ family-tree-svg tests passed');\""
   },
   "keywords": [
     "family-tree",
     "svg",
-    "tree",
-    "visualization",
+    "family-tree-svg",
     "genealogy",
-    "organic",
-    "interactive"
+    "tree-visualization",
+    "family-tree-generator",
+    "genealogy-visualization",
+    "organic-tree",
+    "pedigree-chart",
+    "family-diagram",
+    "javascript-family-tree",
+    "svg-tree",
+    "ancestry-visualization",
+    "interactive-tree",
+    "d3-alternative",
+    "vector-family-tree"
   ],
   "author": "ammarcoderkube",
   "repository": {

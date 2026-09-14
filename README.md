@@ -1,14 +1,62 @@
-# family-tree-svg
-
 <p align="center">
-  <img src="./assets/khan_tree_1.svg" alt="Family Tree SVG — Main Showcase" width="100%" />
+  <h1 align="center">🌳 family-tree-svg</h1>
+  <p align="center">
+    <strong>Pure organic SVG family tree visualization for JavaScript & TypeScript — living trees with realistic calligraphic trunks, natural branching boughs, and botanical leaves. Rendered straight from your JSON data.</strong>
+  </p>
 </p>
 
-Pure organic SVG family tree visualization from JSON data — featuring customizable **branch styles**, **trunk styles**, **3 distinct leaf shapes**, **PNG leaf assets**, dynamic colors, pan/zoom, and vector export.
+<p align="center">
+  <a href="https://www.npmjs.com/package/family-tree-svg"><img src="https://img.shields.io/npm/v/family-tree-svg.svg?style=flat-square&color=2ea44f" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/family-tree-svg"><img src="https://img.shields.io/npm/dm/family-tree-svg.svg?style=flat-square&color=blue" alt="npm downloads" /></a>
+  <a href="https://github.com/ammarcoderkube/family-tree-package"><img src="https://img.shields.io/github/stars/ammarcoderkube/family-tree-package.svg?style=flat-square&color=yellow" alt="GitHub stars" /></a>
+  <a href="https://github.com/ammarcoderkube/family-tree-package/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square" alt="MIT license" /></a>
+  <img src="https://img.shields.io/badge/dependencies-0-brightgreen.svg?style=flat-square" alt="zero dependencies" />
+  <img src="https://img.shields.io/badge/types-TypeScript-blue.svg?style=flat-square" alt="TypeScript ready" />
+</p>
+
+<p align="center">
+  <a href="https://ammarcoderkube.github.io/family-tree-package/"><b>🌐 Live Interactive Demo</b></a> &bull;
+  <a href="#quick-start"><b>⚡ Quick Start</b></a> &bull;
+  <a href="#-visual-style-catalog"><b>🎨 Visual Catalog</b></a> &bull;
+  <a href="#api-reference"><b>📖 API Reference</b></a> &bull;
+  <a href="#faq"><b>❓ FAQ</b></a> &bull;
+  <a href="VISUAL_SHOWCASE.md"><b>🍃 Visual Showcase Guide</b></a>
+</p>
+
+<p align="center">
+  <img src="./assets/khan_tree_1.svg" alt="Family Tree SVG — organic family tree rendered from JSON, showing calligraphic trunk and botanical leaves" width="100%" />
+</p>
 
 ---
 
-### 🎨 Color Themes & Palettes
+## Why family-tree-svg?
+
+Most family tree and genealogy libraries render your data as rigid corporate org charts — rectangular cards, gray boxes, and straight circuit-board lines. That works, but it doesn't feel like a family tree.
+
+**family-tree-svg draws an actual tree.**
+
+- 🌳 **Realistic organic architecture** — a calligraphic woodcut trunk bifurcates naturally into generations of curving boughs, the way a real tree branches.
+- 🍃 **Botanical leaf anatomy** — every family member is a distinct leaf species (Ginkgo, Oak, Birch, Maple, Linden, Laurel, Oval) with gold venation, not a gray box.
+- 👫 **Natural companion pairs** — spouses and partners render as attached companion leaves, not separate linked nodes.
+- 📐 **Pure scalable vector graphics** — zero canvas pixelation. Scales infinitely for 4K/Retina, prints cleanly as a poster, exports directly to `.svg`.
+- 🪶 **Zero runtime dependencies** — small, MIT-licensed, and framework-agnostic (Vanilla JS, React, Vue, Angular, Svelte).
+- 🔒 **Fully typed** — ships with TypeScript definitions out of the box.
+
+---
+
+## How it compares
+
+| Feature | `family-tree-svg` | Typical org-chart libraries |
+|---|---|---|
+| **Visual style** | Organic tree: trunk, boughs, leaves | Boxes/cards connected by straight lines |
+| **Rendering** | Pure SVG, infinitely scalable | Mix of Canvas/SVG/HTML, often pixelated on export |
+| **Dependencies** | Zero | Often requires D3 or a rendering framework |
+| **Output** | Clean vector `.svg` export | Screenshot or raster export only |
+| **License** | MIT, free | Often freemium or commercial |
+
+---
+
+## 🎨 Color Themes & Palettes
 
 Dynamic coordinated color presets and full custom hex support:
 
@@ -43,27 +91,32 @@ Dynamic coordinated color presets and full custom hex support:
 
 ## Features
 
-- 🌿 **3 Distinct Branch Styles** — `woodcut` (living sap lines), `gnarled` (rustic knots), and `classic` (smooth calligraphic curves)
-- 🌳 **3 Organic Trunk Styles** — `earth_roots` (4-root buttress), `gnarly` (ancient oak), and `swirling_olive` (spiral knurls)
-- 🍃 **3 Botanical Leaf Shapes** — `laurel` (Classical Laurel), `oval` (Imperial Oval Medallion), and `oak` (Royal Oak Foliage)
-- 🖼️ **Dual Leaf Render Modes** — Pure Vector SVG path mode or high-resolution textured PNG image mode with pre-rendered transparent assets (`leaf_laurel.png`, `leaf_oval.png`, `leaf_oak.png`)
-- 🎨 **Fully Customizable Colors** — Set custom hex colors for leaves, branches, and trunk
-- 🖱️ **Pan & Zoom** — Smooth drag-to-pan, mouse wheel zoom, and mobile touch support
-- ➕➖ **Collapse/Expand** — Interactive branch collapse/expand buttons
-- 👫 **Partner Support** — Spouses shown as attached companion leaves
-- ⚡ **Auto-Collapse** — Large trees (500+ members) automatically collapse deeper branches for clean rendering
-- 📤 **SVG Export** — Download your tree as a clean vector SVG
-- 🪶 **Zero UI Clutter** — Pure tree component without unnecessary toolbars or widgets
+- 🌿 **3 Distinct Branch Styles** — `woodcut` (living sap lines), `gnarled` (rustic knots), and `classic` (smooth calligraphic curves), plus `willow_tendril` and `zen_bonsai`
+- 🌳 **4 Organic Trunk Styles** — `calligraphic` (elegant S-curve), `gnarled_veteran`, `banyan_cathedral`, and `dragon_bonsai`
+- 🍃 **7 Botanical Leaf Shapes** — `laurel`, `oval`, `oak`, `ginkgo`, `maple`, `birch`, `linden`
+- 🖼️ **Dual Leaf Render Modes** — pure vector SVG path mode or high-resolution textured PNG image mode with pre-rendered transparent assets
+- 🎨 **Fully Customizable Colors** — set custom hex colors for leaves, branches, and trunk
+- 🖱️ **Pan & Zoom** — smooth drag-to-pan, mouse wheel zoom, and mobile touch support
+- ➕➖ **Collapse/Expand** — interactive branch collapse/expand buttons
+- 👫 **Partner Support** — spouses shown as attached companion leaves
+- ⚡ **Auto-Collapse** — large trees (500+ members) automatically collapse deeper branches for clean rendering
+- 📤 **SVG Export** — download your tree as a clean vector SVG
+- 🪶 **Zero UI Clutter** — pure tree component without unnecessary toolbars or widgets
+- 🔒 **TypeScript Support** — full type definitions included, no `@types` package needed
+
+---
+
+## Use Cases
+
+- Genealogy and ancestry websites
+- Family history apps and personal archive tools
+- Wedding/event microsites showing family lineage
+- HR/org-chart alternatives that want a warmer, less corporate visual style
+- Educational tools teaching family/tree data structures
 
 ---
 
 ## Installation
-
-### Via Script Tag (Direct / CDN)
-
-```html
-<script src="path/to/family-tree-svg/src/family-tree-svg.js"></script>
-```
 
 ### Via npm
 
@@ -79,9 +132,18 @@ const FamilyTreeSVG = require('family-tree-svg');
 import FamilyTreeSVG from 'family-tree-svg';
 ```
 
+### Via Script Tag (Direct / CDN)
+
+```html
+<script src="path/to/family-tree-svg/src/family-tree-svg.js"></script>
+```
+
 ---
 
+<a name="quick-start"></a>
 ## Quick Start
+
+### HTML / Vanilla JS
 
 ```html
 <!DOCTYPE html>
@@ -128,30 +190,105 @@ import FamilyTreeSVG from 'family-tree-svg';
 </html>
 ```
 
+### React
+
+```jsx
+import { useEffect, useRef } from 'react';
+import FamilyTreeSVG from 'family-tree-svg';
+
+function FamilyTree({ data }) {
+  const containerRef = useRef(null);
+  const treeRef = useRef(null);
+
+  useEffect(() => {
+    treeRef.current = FamilyTreeSVG.create(containerRef.current, data, {
+      branchStyle: 'woodcut',
+      trunkStyle: 'calligraphic',
+      leafStyle: 'laurel',
+    });
+
+    return () => treeRef.current?.destroy();
+  }, [data]);
+
+  return <div ref={containerRef} style={{ width: '100%', height: '100vh' }} />;
+}
+
+export default FamilyTree;
+```
+
+### Vue
+
+```vue
+<template>
+  <div ref="container" style="width: 100%; height: 100vh;"></div>
+</template>
+
+<script>
+import FamilyTreeSVG from 'family-tree-svg';
+
+export default {
+  props: ['data'],
+  mounted() {
+    this.tree = FamilyTreeSVG.create(this.$refs.container, this.data, {
+      branchStyle: 'woodcut',
+      trunkStyle: 'calligraphic',
+      leafStyle: 'laurel',
+    });
+  },
+  beforeUnmount() {
+    this.tree?.destroy();
+  },
+};
+</script>
+```
+
 ---
 
+## JSON Data Format
+
+```json
+{
+  "full_name": "Ahmed Khan",
+  "family_name": "Khan",
+  "partners": [{ "full_name": "Fatima Ahmed", "family_name": "Khan" }],
+  "children": [
+    {
+      "full_name": "Yusuf Ahmed",
+      "family_name": "Khan",
+      "partners": [],
+      "children": []
+    }
+  ]
+}
+```
+
+Each node needs `full_name` and `family_name`. `partners` and `children` are optional arrays that can nest indefinitely.
+
+---
+
+<a name="-visual-style-catalog"></a>
 ## 🎨 Visual Style Catalog
 
-> 📖 **Looking for high-resolution visual previews?** See the full [Visual Style & Botanical Guide](VISUAL_SHOWCASE.md).
+> 📖 Looking for high-resolution visual previews? See the full [Visual Style & Botanical Guide](VISUAL_SHOWCASE.md).
 
 ### 🍃 Standalone Leaf Shapes (Pure Vector SVG — Zero Background)
 
 All leaf shapes are available as **pure vector SVGs with zero background** (transparent background, zero cards or containers) featuring metallic gold venation and double accent borders:
 
 <p align="center">
-  <img src="assets/leaf_maple.svg" width="125" alt="Japanese Maple" />
+  <img src="assets/leaf_maple.svg" width="125" alt="Japanese Maple leaf shape" />
   &nbsp;&nbsp;&nbsp;
-  <img src="assets/leaf_birch.svg" width="110" alt="Serrated Birch" />
+  <img src="assets/leaf_birch.svg" width="110" alt="Serrated Birch leaf shape" />
   &nbsp;&nbsp;&nbsp;
-  <img src="assets/leaf_linden.svg" width="115" alt="Cordate Linden" />
+  <img src="assets/leaf_linden.svg" width="115" alt="Cordate Linden leaf shape" />
   &nbsp;&nbsp;&nbsp;
-  <img src="assets/leaf_ginkgo.svg" width="115" alt="Majestic Ginkgo" />
+  <img src="assets/leaf_ginkgo.svg" width="115" alt="Majestic Ginkgo leaf shape" />
   &nbsp;&nbsp;&nbsp;
-  <img src="assets/leaf_oak.svg" width="110" alt="Royal Oak" />
+  <img src="assets/leaf_oak.svg" width="110" alt="Royal Oak leaf shape" />
   &nbsp;&nbsp;&nbsp;
-  <img src="assets/leaf_laurel.svg" width="110" alt="Classical Laurel" />
+  <img src="assets/leaf_laurel.svg" width="110" alt="Classical Laurel leaf shape" />
   &nbsp;&nbsp;&nbsp;
-  <img src="assets/leaf_oval.svg" width="110" alt="Imperial Oval" />
+  <img src="assets/leaf_oval.svg" width="110" alt="Imperial Oval leaf shape" />
 </p>
 
 | SVG | Shape | Key | Botanical Anatomy & Venation |
@@ -208,6 +345,7 @@ Sculpted angular mitered facet boughs, chamfered corner nodes, and geometric Zen
 
 ---
 
+<a name="api-reference"></a>
 ## API Reference
 
 ### `FamilyTreeSVG.create(container, data, options)`
@@ -263,6 +401,49 @@ Cleans up event listeners and empties the container DOM.
 
 ---
 
+## Environment Compatibility
+
+- Works in any modern browser (Chrome, Firefox, Safari, Edge)
+- Framework-agnostic: Vanilla JS, React, Vue, Angular, Svelte
+- No build step required for script-tag usage
+- TypeScript definitions included — no separate `@types` package needed
+
+---
+
+<a name="faq"></a>
+## FAQ
+
+### Is family-tree-svg free to use commercially?
+Yes. It's MIT licensed, free for personal and commercial projects, with no attribution required.
+
+### Does it work with React or Vue?
+Yes — it's framework-agnostic. See the React and Vue examples above; it works the same way inside any component lifecycle.
+
+### Can I export the tree as an image?
+Yes, `tree.exportSVG()` downloads a clean vector `.svg` file that scales to any size without quality loss.
+
+### How is this different from a D3-based family tree library?
+`family-tree-svg` doesn't require D3 or any dependency — it renders organic, botanical trees (trunk, boughs, leaves) rather than the card-and-line layout typical of D3-based libraries.
+
+### How many family members can it render?
+Trees with 500+ members are supported; the library auto-collapses deeper branches beyond that point to keep rendering clean and performant.
+
+---
+
+## Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for version history.
+
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).
+
+---
+
+<p align="center">
+  If this helped your project, a ⭐ on <a href="https://github.com/ammarcoderkube/family-tree-package">GitHub</a> helps others find it too.
+</p>
