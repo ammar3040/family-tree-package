@@ -38,14 +38,14 @@
     "d3-alternative",
     "vector-family-tree"
   ],
-  "author": "ammarcoderkube",
+  "author": "ammar3040",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ammarcoderkube/family-tree-package.git"
+    "url": "git+https://github.com/ammar3040/family-tree-package.git"
   },
   "bugs": {
-    "url": "https://github.com/ammarcoderkube/family-tree-package/issues"
+    "url": "https://github.com/ammar3040/family-tree-package/issues"
   },
-  "homepage": "https://github.com/ammarcoderkube/family-tree-package#readme",
+  "homepage": "https://github.com/ammar3040/family-tree-package#readme",
   "license": "MIT"
 }
